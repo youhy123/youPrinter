@@ -28,7 +28,7 @@ import java.util.ArrayList;
 /**
  * This class echoes a string called from JavaScript.
  */
-public class youPrinter extends CordovaPlugin {
+public class youprinter extends CordovaPlugin {
 public static IMyBinder myBinder;
 public static boolean ISCONNECT=false;
 private Activity activity;

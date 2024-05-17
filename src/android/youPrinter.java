@@ -273,7 +273,7 @@ private Context context;
                         list.add(DataForSendToPrinterPos80.initializePrinter());
                         list.add(DataForSendToPrinterPos80.setAbsolutePrintPosition(00,00));
                         list.add(DataForSendToPrinterPos80.selectAlignment(1));
-                        list.add(net.posprinter.utils.StringUtils.strTobytes("CHIYODA INTEGRE ZHONGSHAN CO.,LTD."));
+                        list.add(net.posprinter.utils.StringUtils.strTobytes(cardBean.getWenyan()));
                         list.add(DataForSendToPrinterPos80.printAndFeedLine());
                         list.add(DataForSendToPrinterPos80.printAndFeedLine());
                         list.add(DataForSendToPrinterPos80.printAndFeedLine());

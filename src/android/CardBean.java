@@ -113,4 +113,15 @@ public class CardBean implements Serializable {
     }
 
     private String equipmentNumber;
+
+    public String getWenyan() {
+        return wenyan;
+    }
+
+    public void setWenyan(String wenyan) {
+        this.wenyan = wenyan;
+    }
+
+    //订单总数量 add by lzw 20220805
+    private String wenyan;
 }

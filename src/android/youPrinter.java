@@ -200,8 +200,8 @@ private Context context;
                             int indexOf = cardBean.getPlanQuantity().indexOf(".");
                             PlanQuantity = cardBean.getPlanQuantity().substring(0, indexOf);
                         }
-                        list.add(net.posprinter.utils.StringUtils.strTobytes(cardBean.getActualQuantity()+"/"+StringUtils.setEmptyString(PlanQuantity)));//报工数量/订单总数量
-
+                        //list.add(net.posprinter.utils.StringUtils.strTobytes(cardBean.getActualQuantity()+"/"+StringUtils.setEmptyString(PlanQuantity)));//报工数量/订单总数量
+                        list.add(net.posprinter.utils.StringUtils.strTobytes(cardBean.getActualQuantity()+"/"+NumberUtils.delZero(cardBean.getPlanQuantity())));//报工数量/订单总数量
                         list.add(DataForSendToPrinterPos80.setAbsolutePrintPosition(40,01));
                         list.add(DataForSendToPrinterPos80.selectOrCancelBoldModel(1));//加粗
                         //list.add(DataForSendToPrinterPos80.selectAlignment(2));//居右
